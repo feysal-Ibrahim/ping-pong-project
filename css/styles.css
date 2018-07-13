@@ -1,0 +1,19 @@
+body{
+	font-family: sans-serif;
+	font-style: normal;
+}
+.container{
+	background-color: orange;
+}
+#PongP2{
+ color:green;
+}
+#about{
+	color: green
+}
+
+.container-fluid{
+	background-color: blue;
+	text-align: center;
+	padding: 30px;
+}
