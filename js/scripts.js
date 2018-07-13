@@ -1,18 +1,39 @@
-//backend logic here  
-var leapYear = function(ping) {
-    return ping;
-  };
-  var ping = function() {
-    if ((ping % 3 === 0) & (ping % 5=== 0));
-        return pingpong;
+//backend logic here//
 
-//user interface logic down here
-  $(document).ready(function(pingpong) {
-      $("form#pingpong").submit(function(event) {
-        event.preventDefault();
-        var ping = parseInt($("input#ping").val());
-        var result = pingpong(ping);
-        $("#result").text(result);
-        if (result ===ping);              // same as writing if (result === false)
-           });
-         });
+var pingpong = function(ping) {
+  var numberArray = [];
+  if (ping > 0) {
+    for (var index = 1; index <= ping; index++) {
+      numberArray.push(index);
+    }
+    numberArray.forEach(function(ping) {
+      if (ping % 15 === 0) {
+        numberArray[ping - 1] = 'pingpong';
+      } else if (ping % 3 === 0) {
+        numberArray[ping - 1] = 'ping';
+      } else if (ping % 5 === 0) {
+        numberArray[ping - 1] = 'pong';
+      }
+    });
+  }
+  return numberArray;
+}
+
+var displayResultList = function(outputArray) {
+  $('ul#list').empty();
+  outputArray.forEach(function(item) {
+    $('ul#list').append('<li>' + item + '</li>');
+  });
+}
+
+//user interface logic down here//
+$(document).ready(function() {
+  $('form#pong').submit(function(event) {
+    var ping = $('input#ping2').val();
+
+    displayResultList(pingpong(ping));
+    alert("Hey!Bro BOYD..am not yet good thou!..need you to interpret some concepts here.I will slack you soon");
+
+    event.preventDefault();
+});
+});
