@@ -1,17 +1,18 @@
 //backend logic here  
-var leapYear = function(year) {
+var leapYear = function(ping) {
     return false;
   };
-  var leapYear = function(year) {
-      if ((year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0)) {
-        return true;
-      } else {
+  var leapYear = function() {
+    if
+     else if ((ping % 3 === 0)  (ping % 5=== 0)) {
+        return pingpong;
+      } else if {
         return false;
       }
     };
 
 //user interface logic down here
-  $(document).ready(function() {
+  $(document).ready(function(ping) {
     $('form#pingpong').submit(function(event) {
       var ping = $('input#ping').val();
 
