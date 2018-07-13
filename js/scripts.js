@@ -1,23 +1,18 @@
 //backend logic here  
 var leapYear = function(ping) {
-    return false;
+    return ping;
   };
-  var leapYear = function() {
-    if
-     else if ((ping % 3 === 0)  (ping % 5=== 0)) {
+  var ping = function() {
+    if ((ping % 3 === 0) & (ping % 5=== 0));
         return pingpong;
-      } else if {
-        return false;
-      }
-    };
 
 //user interface logic down here
-  $(document).ready(function(ping) {
-    $('form#pingpong').submit(function(event) {
-      var ping = $('input#ping').val();
-
-      displayResultList(pingpong(ping));
-
-      event.preventDefault();
-  });
-  });
+  $(document).ready(function(pingpong) {
+      $("form#pingpong").submit(function(event) {
+        event.preventDefault();
+        var ping = parseInt($("input#ping").val());
+        var result = pingpong(ping);
+        $("#result").text(result);
+        if (result ===ping);              // same as writing if (result === false)
+           });
+         });
