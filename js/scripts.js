@@ -1,3 +1,5 @@
+//backend logic here//
+
 var pingpong = function(ping) {
   var numberArray = [];
   if (ping > 0) {
@@ -24,9 +26,10 @@ var displayResultList = function(outputArray) {
   });
 }
 
+//user interface logic down here//
 $(document).ready(function() {
-  $('form#pingpong').submit(function(event) {
-    var ping = $('input#ping').val();
+  $('form#pong').submit(function(event) {
+    var ping = $('input#ping2').val();
 
     displayResultList(pingpong(ping));
 
