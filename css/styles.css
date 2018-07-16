@@ -8,6 +8,11 @@ h1{
 }
 .container{
 	background-color: orange;
+	border: solid white;
+	border-radius: 10px;
+}
+#pongp{
+	font-size: 30px;
 }
 #PongP2{
  color:green;
@@ -21,15 +26,49 @@ h1{
 	text-align: center;
 	padding: 30px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    body {
-        background-color: red;
-        color: white;
-    }
+.footer{
+	color:black;
+	margin: auto;
+	padding: auto;
 }
-@media screen and (min-width: 768px) {
-  body {
-    background-color: yellowgreen;
-  }
+.footer p1{
+	font-size: 20px;
+	margin: auto;
+	padding: auto;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
 }
 
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: white;
+  color: blue;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: black;
+  color: white;
+}
