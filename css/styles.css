@@ -24,7 +24,7 @@ h1{
 .container-fluid{
 	background-color: blue;
 	text-align: center;
-	padding: 30px;
+	padding: 60px;
 }
 .footer{
 	color:black;
@@ -71,4 +71,15 @@ h1{
 .fa-instagram {
   background: black;
   color: white;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-color: yellowgreen;
+  }
 }
