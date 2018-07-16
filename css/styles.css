@@ -8,6 +8,8 @@ h1{
 }
 .container{
 	background-color: orange;
+	border: solid white;
+	border-radius: 10px;
 }
 #PongP2{
  color:green;
