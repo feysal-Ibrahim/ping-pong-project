@@ -3,6 +3,9 @@ body{
 	font-style: normal;
 	background-color: black;
 }
+h1{
+	color: white;
+}
 .container{
 	background-color: orange;
 }
