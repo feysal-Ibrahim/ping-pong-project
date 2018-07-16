@@ -26,15 +26,6 @@ h1{
 	text-align: center;
 	padding: 30px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    body {
-        background-color: red;
-        color: white;
-    }
+.footer{
+	text-align: center;
 }
-@media screen and (min-width: 768px) {
-  body {
-    background-color: black;
-  }
-}
-
