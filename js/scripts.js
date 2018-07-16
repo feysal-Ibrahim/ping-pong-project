@@ -19,7 +19,7 @@ var pingpong = function(ping) {
   return numberArray;
 }
 
-var displayResultList = function(outputArray) {
+var Result = function(outputArray) {
   $('ul#list').empty();
   outputArray.forEach(function(item) {
     $('ul#list').append('<li>' + item + '</li>');
@@ -28,11 +28,11 @@ var displayResultList = function(outputArray) {
 
 //user interface logic down here//
 $(document).ready(function() {
-  $('form#pong').submit(function(event) {
-    var ping = $('input#ping2').val();
+  $("form#pong").submit(function(event) {
+    var ping = $("input#ping2").val();
 
-    displayResultList(pingpong(ping));
-    alert("Hey!Bro BOYD..Am not yet good thou!..Need you to interpret some concepts here.I will slack you soon.");
+    Result(pingpong(ping));
+    alert("Hey!Bro BOYD..Am not yet good thou!..Need you to interpret some concepts here.I will slack you soon.PRESS OK TO VIEW THE RESUL");
 
     event.preventDefault();
 });
