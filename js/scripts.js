@@ -32,7 +32,7 @@ $(document).ready(function() {
     var ping = $("input#ping2").val();
 
     Result(pingpong(ping));
-    alert("Hey!Bro BOYD..Am not yet good thou!..Need you to interpret some concepts here.I will slack you soon.PRESS OK TO VIEW THE RESULT");
+    alert("Hey!Bro BOYD..Am not yet good thou!..Need you to interpret some concepts here.I will slack you soon.PRESS OK TO VIEW THE RESULT.");
 
     event.preventDefault();
 });
